@@ -1,0 +1,108 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+
+body{
+     font-family: "Roboto", sans-serif;
+     line-height: 1.8;
+} 
+
+
+ .hero-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-main{
+    background: linear-gradient(to right,#00e0fe, #1107fe);
+    border-radius: 100px;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+}
+
+.btn:hover {
+    color: #fff;
+    transform:translateY(-5px);
+}
+.bg-cover{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ /* content-box*/
+ .section-intro{
+    margin-bottom: 40px;
+    color: black !important;
+ }
+ .section-intro .divider {
+   height: 4px;
+   width: 85px;
+   background: linear-gradient(to right,#00e0fe,#1107fe);
+   margin: 16px auto;
+ }
+
+ /* 
+.faculte .faculte-img .icon{
+   width: 90px;
+   height: 90px;
+   background: linear-gradient(to right,#00e0fe,#1107fe);
+   color: #fff;
+   border-radius: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   bottom: -45px;
+   left: 50%;
+   transform: translateX(-50%);
+}
+*/
+.faculte-title {
+   color: black !important;
+   margin: 10px !important;
+}
+.faculte .faculte-img{
+   position: relative
+   ;
+}
+.faculte .faculte-img img{
+   width: 300px !important;
+   height: 300px;
+   border-radius: 10px;
+}
+
+.sway {
+   -webkit-animation: sway 3s ease-in-out infinite alternate ;
+   -moz-animation: sway 3s ease-in-out infinite alternate ;
+   -o-animation: sway 3s ease-in-out infinite alternate ;
+   animation: sway 3s ease-in-out infinite alternate;
+}
+@-moz-keyframes sway{ 
+   0% { -moz-transform: rotate(-15deg);}
+   100% { -moz-transform: rotate(15deg);}
+}
+
+@-webkit-keyframes sway { 
+   0% {-webkit-transform: rotate(-15deg);}
+   100% {-webkit-transform: rotate(15deg);}
+}
+
+@-o-keyframes sway {
+
+   0% { -o-transform: rotate(-15deg);}
+   100% { -o-transform: rotate(15deg);}
+}
+@-ms-keyframes sway {
+   0% { -ms-transform: rotate(-15d);}
+   100% { -ms-transform: rotate(15d);}
+}
+@keyframes sway{
+   0% { transform: rotate(-15deg);}
+   100% { transform:  rotate(15deg);}
+}
+
+ .apropos .cc-title{
+    margin: 20px;
+    font-weight: 900;
+ }

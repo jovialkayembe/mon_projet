@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="stylebio.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="style/css/bootstrap-theme.css" rel="stylesheet">
+  <link href="style/styles/fontawesome.css" rel="stylesheet" />
+  <link href="style/css/elegant-icons-style.css" rel="stylesheet" />
+  <link href="style/styles/fontawesome.css" rel="stylesheet" />
+  <link href="style/css/style.css" rel="stylesheet">
+  <link href="style/css/style-responsive.css" rel="stylesheet" />
+
+
+  <title>Encyclopédie - Mathématiques et Informatique</title>
+</head>
+
+<body>
+  <div class="container">
+
+      <h2 class="titre">Encyclopédie - Livres de Mathématiques et d'Informatique</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Index</th>
+          <th scope="col">Titre</th>
+          <th scope="col">Telecharger et Lire</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% encyclopedia.forEach((entry,index)=> { %>
+          <tr>
+            <td>
+              <%= index + 1 %>
+            </td>
+            <td>
+              <%= entry.title %>
+            </td>
+            <td><a href="<%= entry.downloadLink %>"> Télécharger</a></td>
+          </tr>
+          <% }); %>
+      </tbody>
+    </table>
+</body>
+
+</div>
+
+</html>
